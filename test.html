@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="domain_input" placeholder="Type something...">
+    <div id="domain_dropdown_div" class="domain_dropdown_content"></div>
+    <script>
+        // JavaScript 코드
+        const domain_link_list = ["Apple", "Banana", "Cherry", "Date", "Fig", "Grape", "Kiwi", "Lemon","도림"];
+      
+        function showDropdown(event) {
+          const domain_input = document.getElementById("domain_input");
+          const dropdown = document.getElementById("domain_dropdown_div");
+          dropdown.innerHTML = "";
+      
+          const domain_input_val = domain_input.value.toLowerCase();
+          const domain_link_list_filter = domain_link_list.filter(fruit => fruit.toLowerCase().includes(domain_input_val)).slice(0, 5);
+      
+          if (domain_input_val.length > 0 && domain_link_list_filter.length > 0) {
+            dropdown.style.display = "block";
+            domain_link_list_filter.forEach(fruit => {
+              const option = document.createElement("div");
+              option.textContent = fruit;
+              option.addEventListener("click", function() {
+                domain_input.value = fruit;
+                dropdown.style.display = "none";
+              });
+              dropdown.appendChild(option);
+            });
+            if (event.key === "Enter") {
+              domain_input.value = domain_link_list_filter[0];
+              dropdown.style.display = "none";
+            }
+          } else {
+            dropdown.style.display = "none";
+          }
+        }
+      
+        document.getElementById("domain_input").addEventListener("keyup", function(event) {
+          showDropdown(event);
+        });
+      
+        document.addEventListener("click", function(e) {
+          const dropdown = document.getElementById("domain_dropdown_div");
+          if (!dropdown.contains(e.target)) {
+            dropdown.style.display = "none";
+          }
+        });
+      </script>
+</body>
+</html>
