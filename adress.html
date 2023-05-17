@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>우체국 주소 API 예제</title>
+	<!-- 주소 API에서 요구하는 스타일시트와 스크립트를 추가합니다. -->
+	<link rel="stylesheet" href="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.css">
+	<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+</head>
+<body>
+	<!-- 주소 입력 필드와 주소 검색 버튼을 만듭니다. -->
+	<!-- <input type="text" id="sample4_postcode" placeholder="우편번호" onclick="sample4_execDaumPostcode()"> -->
+	<input type="button" value="주소 검색" onclick="sample4_execDaumPostcode()"><br>
+	<input type="text" id="sample4_roadAddress" placeholder="도로명주소"><br>
+	<!-- <input type="text" id="sample4_jibunAddress" placeholder="지번주소"><br>
+	<input type="text" id="sample4_detailAddress" placeholder="상세주소"><br>
+	<input type="text" id="sample4_extraAddress" placeholder="참고항목"> -->
+
+	<script>
+		// 주소 검색 API를 실행하는 함수입니다.
+		function sample4_execDaumPostcode() {
+			new daum.Postcode({
+				oncomplete: function(data) {
+					// 검색된 주소 정보를 해당 필드에 입력합니다.
+					document.getElementById('sample4_postcode').value = data.zonecode; // 우편번호
+					document.getElementById('sample4_roadAddress').value = data.roadAddress; // 도로명주소
+					document.getElementById('sample4_jibunAddress').value = data.jibunAddress; // 지번주소
+					document.getElementById('sample4_detailAddress').value = ""; // 상세주소
+					document.getElementById('sample4_extraAddress').value = ""; // 참고항목
+				}
+			}).open();
+		}
+	</script>
+</body>
+</html>

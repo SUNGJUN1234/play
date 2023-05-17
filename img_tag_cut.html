@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <img src="https://www.chamhongeo.co.kr:443/data/editor/2305/f95a729bf69ea3364fb6e4ee62b0907a_1683678968_72.jpg" alt="">
+
+    
+    <script>
+        const longString = "긴 문자열이 있습니다. <img src='image1.jpg' alt='Image 1'> 그리고 다른 이미지 <img src='image2.jpg' alt='Image 2'>";
+
+const imgTags = [];
+let startIndex = 0;
+
+while (true) {
+  const imgStart = longString.indexOf("<img", startIndex);
+  if (imgStart === -1) {
+    break;
+  }
+
+  const imgEnd = longString.indexOf(">", imgStart);
+  if (imgEnd === -1) {
+    break;
+  }
+
+  const imgTag = longString.substring(imgStart, imgEnd + 1);
+  imgTags.push(imgTag);
+
+  startIndex = imgEnd + 1;
+}
+
+console.log(imgTags);
+
+    </script>
+</body>
+</html>
