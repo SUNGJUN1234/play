@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <style>
+        body{
+        }
+
+        .top_div{
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .multiple-items{
+            margin: 0px auto;
+            width: 90%;
+            height: 100%;
+            border: 3px solid black;
+        }
+
+        .slick-list{
+            height: 100%;
+        }
+
+        .slick-track{
+            height: 100%;
+        }
+
+        .child{
+            height: 100% ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="top_div">
+
+        <div class="multiple-items">
+            <div class="child" style="background-color: antiquewhite;"></div>
+            <div class="child" style="background-color: rgb(255, 145, 0);">2</div>
+            <div class="child" style="background-color: rgb(231, 142, 83);">3</div>
+            <div class="child" style="background-color: rgb(255, 69, 69);">4</div>
+            <div class="child" style="background-color: rgb(212, 250, 75);">5</div>
+        </div>
+    </div>
+
+<script>
+    $( document ).ready( function() {
+        
+        $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+            });
+                    
+      } );
+    </script>
+    
+</body>
+</html>

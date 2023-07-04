@@ -1,57 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <input type="text" id="domain_input" placeholder="Type something...">
-    <div id="domain_dropdown_div" class="domain_dropdown_content"></div>
-    <script>
-        // JavaScript 코드
-        const domain_link_list = ["Apple", "Banana", "Cherry", "Date", "Fig", "Grape", "Kiwi", "Lemon","도림"];
-      
-        function showDropdown(event) {
-          const domain_input = document.getElementById("domain_input");
-          const dropdown = document.getElementById("domain_dropdown_div");
-          dropdown.innerHTML = "";
-      
-          const domain_input_val = domain_input.value.toLowerCase();
-          const domain_link_list_filter = domain_link_list.filter(fruit => fruit.toLowerCase().includes(domain_input_val)).slice(0, 5);
-      
-          if (domain_input_val.length > 0 && domain_link_list_filter.length > 0) {
-            dropdown.style.display = "block";
-            domain_link_list_filter.forEach(fruit => {
-              const option = document.createElement("div");
-              option.textContent = fruit;
-              option.addEventListener("click", function() {
-                domain_input.value = fruit;
-                dropdown.style.display = "none";
-              });
-              dropdown.appendChild(option);
-            });
-            if (event.key === "Enter") {
-              domain_input.value = domain_link_list_filter[0];
-              dropdown.style.display = "none";
-            }
-          } else {
-            dropdown.style.display = "none";
-          }
-        }
-      
-        document.getElementById("domain_input").addEventListener("keyup", function(event) {
-          showDropdown(event);
-        });
-      
-        document.addEventListener("click", function(e) {
-          const dropdown = document.getElementById("domain_dropdown_div");
-          if (!dropdown.contains(e.target)) {
-            dropdown.style.display = "none";
-          }
-        });
-      </script>
-</body>
-</html>
+<div>
+  <img src="/site_data/editor/202004/170ec21116093937c6cb40ef5c8e1be7_1585707699_8514.png" title="170ec21116093937c6cb40ef5c8e1be7_1585707699_8514.png" style="max-width:100%">
+  </div><div><br></div>
+  
+  <div style="width:100%; clear:both; margin-bottom:20px;">
+  <a href="/user/board/lists/board_cd/702050" style="width:32%; margin-right:1%; float:left">
+  <img src="/site_data/editor/202004/170ec21116093937c6cb40ef5c8e1be7_1585709996_5624.png" title="170ec21116093937c6cb40ef5c8e1be7_1585709996_5624.png" style="max-width:100%">
+  </a>
+  
+  <a href="/user/board/lists/board_cd/702020" style="width:32%; margin-right:1%; float:left">
+  <img src="/site_data/editor/202004/170ec21116093937c6cb40ef5c8e1be7_1585709996_6407.png" title="170ec21116093937c6cb40ef5c8e1be7_1585709996_6407.png" style="max-width:100%">
+  </a>
+  <a href="/user/board/lists/board_cd/702080" style="width:32%; float:left">
+  <img src="/site_data/editor/202306/muan_woman.png" title="muan_woman.png" style="max-width:100%">
+  </a>
+  <div style="clear:both;"></div>
+  </div>
+  
+  <div><br></div>
+  <div style="width:100%; margin-bottom:20px;">
+  <a href="/user/board/lists/board_cd/702010" style="width:32%; margin-right:1%; float:left">
+  <img src="/site_data/editor/202306/jeung.png" title="jeung.png" style="max-width:100%">
+  </a>
+  
+  <a href="/user/board/lists/board_cd/702012" style="width:32%; margin-right:1%; float:left">
+  <img src="/site_data/editor/202306/neuti.png" title="neuti.png" style="max-width:100%">
+  </a>
+  
+  <a href="/user/board/lists/board_cd/702030" style="width:32%; float:left">
+  <img src="/site_data/editor/202004/170ec21116093937c6cb40ef5c8e1be7_1585709996_7491.png" title="170ec21116093937c6cb40ef5c8e1be7_1585709996_7491.png" style="max-width:100%">
+  </a>
+  <div style="clear:both;"></div>
+  </div>
+  
+  <div><br></div>
+  <div style="width:100%; clear:both; margin-bottom:20px;">
+  <a href="/user/board/lists/board_cd/702011" style="width:32%; margin-right:1%; float:left">
+  <img src="/site_data/editor/202306/start_hwang.png" title="start_hwang.png" style="max-width:100%">
+  </a>
+  
+  
+  <a href="/user/board/lists/board_cd/702040" style="width:32%; margin-right:1%; float:left">
+  <img src="/site_data/editor/202004/170ec21116093937c6cb40ef5c8e1be7_1585709996_7993.png" title="170ec21116093937c6cb40ef5c8e1be7_1585709996_7993.png" style="max-width:100%">
+  </a>
+  
+  
+  <a href="/user/board/lists/board_cd/702090" style="width:32%; float:left">
+  <img src="/site_data/editor/202004/170ec21116093937c6cb40ef5c8e1be7_1585815347_193.png" title="170ec21116093937c6cb40ef5c8e1be7_1585815347_193.png" style="max-width:100%">
+  </a>
+  
+  <div style="clear:both;"></div>
+  </div>

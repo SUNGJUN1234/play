@@ -1,0 +1,541 @@
+@charset "utf-8";
+
+/* 내용관리 */
+#ctt {background:#fff}
+.ctt_admin {text-align: right; position: absolute; right: 0; top: 15px;}
+#ctt header h1 {position:absolute;font-size:0;line-height:0;overflow:hidden}
+#ctt_con {height:100%; position: relative; word-break:keep-all;}
+#ctt_con img{max-width:100%;height:auto}
+.ctt_img {text-align:center}
+*, :after :before {box-sizing:border-box;}
+#ctt_con p { font-size:18px; word-break: keep-all; }
+
+.tcenter {text-align:center;}
+
+
+/* 서브타이틀 */
+
+.dep_tit {position:relative;font-size: 23px;letter-spacing: -0.55pt;color: #444;padding-left: 28px;margin-top:30px;margin-bottom: 20px;}
+.dep_tit:after {display: block;clear: both;content: '';/* background: url(/theme/basic/img/tit_img.png) no-repeat; */position: absolute;left: 0;background: #3ab4b1;bottom: 0;width: 17px;height: 31px;}
+.dep_tit2 {background: url(/theme/basic/img/logoimg.png) no-repeat left -9px; font-size: 19px; letter-spacing: -0.55pt; line-height: 120%; color: #444; padding-left:70px; padding-bottom: 13px; }
+
+/*tab*/
+.mainbox .tab { width: 100%; margin-bottom: 30px; }
+.mainbox .tab::after { display: block; visibility: hidden; content: ""; clear: both; }
+.mainbox .tab ul li { text-align: center; cursor: pointer; float: left; /* padding: 13px 0; */ background: #f9f9f9; border: 1px solid #eee; font-size: 16px; border-top: 3px solid #f9f9f9; color: #777;}
+.mainbox .tab ul li.on {background: #fff;border: 1px solid #eee;border-top: 3px solid #135f67;color: #135f67;}
+.mainbox .tab ul li a {padding: 13px 0; display:block;}
+
+.tab_container { display: none; }
+.tab_container.on { display: block; }
+
+.tab_container02 { display: none; margin-top: 20px;}
+.tab_container02.on { display: block; }
+
+.mainbox .tab_btn01 li { width:33.333%;}
+.mainbox .tab_btn02 li { width:25%;}
+
+.mainbox .tab_btn03 { text-align: center; border-bottom: 1px solid #c5c9d6; }
+.mainbox .tab .tab_btn03 li { margin-top: 20px; float: unset; display: inline-block; border: 0; padding: 15px; background: 0; font-size: 18px;}
+.mainbox .tab .tab_btn03 li.on { font-weight: 500; border: 0; position: relative;}
+.mainbox .tab .tab_btn03 li.on::before { display: block; content: ""; width: 10px; height: 10px; border-radius: 100%; background: #f18233; position: absolute; left: 50%; transform: translate(-50%); bottom: -5px; }
+
+
+
+.mainbox .tab_btn03 { text-align: center; border-bottom: 1px solid #c5c9d6; }
+.mainbox .tab02 .tab_btn03 li { margin-top: 20px; float: unset; display: inline-block; border: 0; padding: 15px; background: 0; font-size: 14px;transition: .2s; cursor: pointer;  }
+.mainbox .tab02 .tab_btn03 li.on { font-weight: 500; border: 0; position: relative; font-size: 18px;transition: .2s; color: #f18233;}
+.mainbox .tab02 .tab_btn03 li.on::before { display: block; content: ""; width: 10px; height: 10px; border-radius: 100%; background: #f18233; position: absolute; left: 50%; transform: translate(-50%); bottom: -5px; }
+.tcenter {text-align:center;}
+
+
+/*자주하는 질문*/
+
+.HCP {}
+.HCP .gray { font-size: 23px; color: #ddd; text-align: center; margin-top:8px; }
+
+.HCP .tab_container { width: 100%; border: 1px solid #ddd; border-radius: 25px; position: relative; margin-top:40px; overflow: hidden;}
+
+.HCP .HCP01,.HCP .HCP02 { margin-top: 60px; }
+.HCP .HCP01 li { width: 25%; float: left;}
+.HCP .HCP01::after { display: block; visibility: hidden; content: ""; clear: both; }
+.HCP .HCP01 .cirle { display: block; position: relative; width: 10rem; height: 10rem; margin: 0 auto 30px; border-radius: 100%; text-align: center; }
+.HCP .HCP01 .cirle.icon01 { background: #303d5a url(img/hcp_icon01.png) center 35px no-repeat; background-size: 80px; }
+.HCP .HCP01 .cirle.icon02 { background: #303d5a  url(img/hcp_icon02.png) center no-repeat; background-size: 80px; }
+.HCP .HCP01 .cirle.icon03 { background: #303d5a url(img/hcp_icon03.png) center 35px no-repeat; background-size: 80px; }
+.HCP .HCP01 .cirle.icon04 { background: #303d5a url(img/hcp_icon04.png) center 35px no-repeat; background-size: 80px; }
+
+.HCP .HCP01 .cirle::before { position: absolute; left: 0; bottom: 12px; width: 100%; font-size: 18px; font-weight: 600; color: #fff; counter-increment: section; content: "0" counter(section); }
+.HCP .HCP01 .box { width: 15.25rem; max-width: 90%; margin: 0 auto; border: 1px solid #ddd; word-break: keep-all; }
+.HCP .HCP01 .box .header { display: table; padding: 0.5rem; border-bottom: 1px solid #ddd; background-color: #fafafa; width: 100%; height: 61px;}
+.HCP .HCP01 .box .header p { font-size: 17px; font-weight: 400; text-align: center; width: 100%; display: table-cell; vertical-align: middle;}
+.HCP .HCP02 { background: #f9f9f9; padding: 40px; }
+.HCP .HCP02 li { font-size: 20px; font-weight: 500; margin-bottom: 40px; position: relative; padding-left: 55px; }
+.HCP .HCP02 li:last-child { margin: 0; }
+.HCP .HCP02 li::before { display: block; position: absolute; left: 0; top: 50%; transform: translate(0,-50%); width: 45px; height: 45px; line-height: 45px; background: #f18233; border-radius: 100%; font-size: 18px; text-align: center;
+    font-weight: 600; color: #fff; counter-increment: section; content: "0" counter(section);}
+
+.HCP .HCP03 {  margin-top: 60px; }
+.HCP .HCP03 .HCP_Pic {  }
+.HCP .HCP03 .HCP_Pic ul { }
+.HCP .HCP03 .HCP_Pic ul li { width: 49%; margin-right: 1%; margin-bottom: 1%; float: left; }
+.HCP .HCP03 .tab_container02 .HCP04{margin-top:30px;}
+.HCP .HCP03 .tab_container02 .HCP05{margin-top:30px;}
+.HCP .HCP03 .tab_container02 .HCP04_m {display:none;}
+.HCP .HCP03 .tab_container02 .HCP05_m {display:none;}
+
+.HCP .box02 { width: 100%; margin: 30px 0 25px; text-align: center; padding: 25px 0; border-top: 3px solid #7a7d96; border-bottom: 4px solid #c5c9d6; font-size: 18px; position: relative;}
+.HCP .box02::before {  display: block; content: ""; position:absolute; top: 0; right: 0; width: 3px; height: 40px; background-color: #7a7d96;}
+.HCP .box02::after { display: block; content: ""; position:absolute; bottom: -4px; left: 0; width: 170px; height: 4px; background: url(img/line_back.png) repeat-x;}
+
+/* 인사말 */
+.top_box {height:250px;}
+.img_box {float: left; width:30%;}
+.top_box1 {color:#1486e6; width:70%; float:left; margin-top: 15px;}
+.top_box1 span {font-size:18px; display:block; font-weight: 500; margin-top:8px;}
+.top_box2 {margin-top:35px; width:70%; float:left;}
+.top_box2 span {font-size:18px; display:block; font-weight: 500;}
+.bottom_box {height:700px}
+
+.hello_img { width:300px; float: left; }
+.hello_img:after { display: block; visibility: hidden; content: ""; clear: both; }
+.hello_img p { text-align: right; margin-top:10px }
+.hello_img p span { font-size:24px; font-weight: 600; }
+
+.hello { width: calc(100% - 300px); float: left; padding-left:30px; }
+.hello:after { display: block; visibility: hidden; content: ""; clear: both; }
+.hello p { margin-bottom:20px; line-height: 1.4em; }
+.sign { text-align: right; margin-top:40px; font-size:20px }
+
+.basic p.color {font-size: 26px !important;font-family: 'S-COREDREAM';text-align: center;padding: 10px;margin-bottom: 25px;color: #135f67;border-bottom: 1px solid #368f8d;border-top: 1px solid #368f8d;}
+
+/* 윤리강령 */
+.outpage {font-size: 20px; color: #222; line-height: 1.6; /*font-family: NanumGothic; */padding: 0px; letter-spacing: -0.5px; max-width: 1200px; margin: 0 auto; margin-bottom: 60px;}
+.mission-box {background: url(/theme/basic/img/pt_box1.png); padding: 1% 1% 1%; position: relative; box-sizing: border-box; margin-bottom: 2%;}
+.mission-box:before {position: absolute; left: 0; top: 0; width: 50px; height: 50px; border-left: 10px solid #83d1c4; border-top: 10px solid #83d1c4; content: '';}
+.mission-box:after {position: absolute; right: 0; bottom: 0; width: 50px; height: 50px; border-right: 10px solid #3ab4b1; border-bottom: 10px solid #3ab4b1; content: '';}
+.white-box {background: white;padding: 35px 50px;line-height: 1.4em;}
+.outpage h1 {font-size: 25pt; color: #474b55; font-weight: 700; padding: 0; margin: 0 0 30px; line-height: 1.4; background: url(/theme/basic/img/logoimg.png) no-repeat center left; display:inline-block; padding-left:70px;}
+.outpage h2 {font-size: 19pt;color: #474b55;font-weight: 700;border-left: 8px solid #368f8d;padding: 0 0 1px 18px;margin: 0 0 30px;line-height: 1.3;margin-top: 70px;}
+.ethic_tit {background: #368f8d;display: inline-block;font-size: 22px;color: #fff;padding: 1% 2% 1% 1.5%;border-radius: 0 10px 0 10px; margin-top:30px;}
+.outpage h4 {font-size: 14pt; color: #474b55; font-weight: 600; padding: 0; margin: 0 0 10px; background: url(/theme/basic/img/logoimg.png) no-repeat left; padding-left: 65px;}
+.ethic_li {padding: 7px 0 10px;list-style: none;font-size:20px;line-height: 1.4em;word-break: keep-all;}
+.ethic_li span {display:block; padding-bottom:10px;}
+
+
+/* 사회복지사선서 */
+.sub_cont{width: 950px;  margin: 0px; padding: 0px; float: right; overflow: hidden;}
+.cont{float: left; padding: 0px;  width: 100%;  padding-top: 25px;}
+.mainpage {width: 950px; font-size: 12pt; color: #222; line-height: 1.6; /* font-family: NanumGothic;*/ padding: 0px;  margin: 15px auto; word-break: keep-all; letter-spacing: -0.5px;}
+.mainpage h1 {display:inline-block;font-size: 25pt; color: #474b55; font-weight: 700; padding: 0; margin: 0 0 30px; text-align:center; line-height: 1.4; background: url(/theme/basic/img/logoimg.png) no-repeat center left;padding-left:70px;}
+.mainpage b {font-weight: 500;}
+.rule_bg{background: url(/theme/basic/img/pt_box1.png); padding: 1% 0; position: relative;}
+.rule_bg:before {position: absolute; left: 0; top: 0; width: 50px; height: 50px; border-left: 10px solid #83d1c4; border-top: 10px solid #83d1c4; content: '';}
+.rule_bg:after {position: absolute; right: 0; bottom: 0; width: 50px; height: 50px; border-right: 10px solid #3ab4b1; border-bottom: 10px solid #3ab4b1; content: '';}
+.rule_box /*{border: 10px double #d8dee2; */{ border-radius: 3px; margin: 0 1%; background: #fff; padding:20px 20px;}
+.rule_txt_box{line-height: 2; font-size: 20px; text-align:center;}
+.rule_txt_box b {color: #2a817f;font-size: 22px;}
+
+/* 사회복지사란 */
+.tmar30 {margin-top: 30px;}
+.tmar45 {margin-top: 45px;}
+.tmar60 {margin-top: 60px;}
+
+.dep_txt {letter-spacing: -0.4pt; line-height: 25px;}
+.dep_txt span {font-size:20px;}
+.bg_box {border: 1px solid #ddd; background: #f5f5f5; padding: 15px 28px; margin-bottom: 10px; font-size: 19px; line-height: 1.4em; word-break: keep-all;}
+.fa fa-toggle-on:before {content: "\f205";}
+.socialworker_cont .bg_box h6 {font-size: 20px; letter-spacing: -0.35pt; line-height: 120%; color: #444; /* font-family: NotoKR-Medium; */ padding-bottom: 15px;}
+.dep_dot {letter-spacing: -0.35pt; line-height: 23px; background: url(/theme/basic/img/dep_dot.gif) no-repeat left 10px; padding: 0 0 3px 9px;}
+.socialworker_cont .socialworker_field {overflow: hidden; clear: both;}
+.socialworker_field .normal h6 {background-color: #188c89;text-align : center;}
+.socialworker_field h6 {color: #fff;font-weight: 600;font-family: NotoKR-Medium;font-size: 20px;letter-spacing: -0.5pt;padding: 17px 29px 18px;}
+.normal {float : left; width: 460px; margin-right:10px;}
+.expansion {float : left; width: 460px;}
+.socialworker_field .expansion h6 {background-color: #135f67;text-align : center;}
+.socialworker_field p {color: #116360;letter-spacing: -0.35pt;line-height: 120%;font-size: 20px;padding: 24px 0 10px;font-weight: 600;}
+.socialworker_field span {font-size: 19px; line-height: 1.4em;}
+.socialworker_fieldbox {border: 1px solid #ddd; border-top: none; padding: 0 25px 25px 25px;}
+.socialworker_fieldbox h5 {color: #444444;font-size: 17px;margin-bottom: 3px;margin-top: 4px;}
+.socialworker_fieldbox2 {border: 1px solid #ddd; border-top: none; padding: 0 25px 25px 25px;}
+.socialworker_fieldbox2 p {color: #065553;letter-spacing: -0.35pt;line-height: 120%;font-size: 20px;padding: 24px 0 7px;font-weight: 600;}
+.tpad10 {padding-top:10px;}
+.socialworker_field:after {display: block; clear: both; content: '';}
+
+/* 자격제도 */
+/*.mainbox h3 {font-size: 21px; font-weight: bold; background: url(/theme/basic/img/logoimg.png) no-repeat left; padding-left: 70px; background-position-y: -5px; padding-bottom: 20px; padding-top: 7px;}*/
+.mainbox h6 {font-size : 20px; font-weight : 600; margin-bottom:10px;}
+.title-span {display:block; color:#39F; font-size: 15px; font-weight: 500; margin-top:20px;} 
+.tmar10 {margin-top: 10px;}
+.HCP01:after {display:block;visibility:hidden;clear:both;content:""}
+.HCP01 li {float : left; width: 25%;}
+.cirle {display: block;width: 10rem;height: 10rem;margin: 0 auto 30px;border-radius: 100%;text-align: center;padding-top: 56px;font-size: 19px;color: white;font-weight: 500;line-height: 27px;}
+.box2_1 {width: 15.25rem;max-width: 90%;margin: 0 auto;border: 1px solid #eefefb;word-break: keep-all;}
+.boxhd2_1 {display: table;padding: 0.5rem;border-bottom: 1px solid #d7f5f0;background-color: #d7f5f0;width: 100%;height: 61px;}
+.boxhd2_1 p {font-size: 19px; font-weight: 400; text-align: center; width: 100%; display: table-cell; vertical-align: middle;}
+.txt {font-size: 17px;padding: 1rem;height: 330px;display: table-cell;line-height: 1.4em;word-break: keep-all;}
+.tmar45 {margin-top:45px;}
+.ulclass {padding-left:20px; list-style: disc;}
+.ulclass2 {padding-left: 40px; padding-top:3px; padding-bottom:10px; list-style: circle;}
+.color1 {background-color: #2c7d7c;}
+.color2 {background-color: #135f67;}
+.color3 {background-color: #247d9e;}
+.color4 {background-color: #2d4f6f;}
+.rule_txt_box2 h2 {text-align: center; font-size: 25px; padding-bottom: 15px;}
+
+/* 등급별자격기준 */
+.box1 p {font-size: 18px; font-weight: bold;}
+.spanblue {color :#39F; font-size: 15px; font-weight: bold;}
+.spanred {display: inline-block; margin-top: 5px; padding-left: 30px; color: #F30;}
+.spanred2 {color: #F30; display: inline-block;}
+.box2 {margin-top:30px}
+.box2 p {font-size: 20px; font-weight: bold;}
+.graybox {border: 1px solid #CCC; background: #efefef;}
+.redbox {display: inline-block; text-align: center; background: #f30; padding: 10px; margin-top: 20px; margin-left: 370px; margin-bottom: 10px; width: 200px; color: #fff;}
+.bpad15 {padding-bottom : 15px;}
+.box_g {width: 200px; margin: 0 auto; text-align: center; margin-top: 20px; padding: 10px; border: 1px solid #ccc; background: #3ab4b1; color:white;}
+
+
+/*시군지회*/
+.card{width: 600px; height: 400px; position: absolute; top: 40%; left: 50%; line-height: 25px; overflow-y: auto; background-color: white; text-align: center; box-shadow: 1px 1px 18px rgb(0 0 0 / 20%); border-radius: 20px; transform: translate(-50%, -50%); margin-top:50px; transition:0.6s;}
+.card_list h2 {font-size:24px;}
+.card_list span {display:block; font-size:18px;}
+.cardtitle{font-size: 23px !important; font-weight: 600; padding-bottom: 10px; padding-top:35px;}
+.cardtitle_none {font-size: 30px !important; font-weight: 600; padding-bottom: 40px; padding-top: 100px; word-break: keep-all;}
+.card_bg {background: rgba(0,0,0,0.6); width: 100%; height: 100%;}
+.card_main {width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 999; opacity: 0; visibility: hidden; transition: 0.4s;}
+.card_head {background-color: #3ab4b1; padding: 15px 10px; text-align: center; font-size: 23px; color: white;}
+.card_main.act .card {margin-top:0;}
+.card_close {border: 1px solid black; border-radius: 50px; display: inline-block; font-size: 20px; font-weight: 400; color: black; padding: 5px 30px; margin-top: 25px; background-color: white; cursor: pointer;}
+.card_close:hover {background-color : #3ab4b1; color:white; transition: 0.3s; border : 1px solid #FF8F23}
+
+/* 등급별자격기준 */
+
+
+/* 자격신청 */
+.certificate:after {display:block;visibility:hidden;clear:both;content:""}
+.certificate {margin-top: 30px;}
+.certificate ul:after {display:block;visibility:hidden;clear:both;content:""}
+.certificate li:hover {background-color: #135f67;transition-duration: 1s;}
+.certificate_li1 {float:left;width: 47.5%;text-align: center;background-color: #3ab4b1;margin-right: 5%;padding: 1% 2% 2%;border-radius: 3px 15px 3px 15px;line-height: 1.3;text-decoration: none;color: #fff;font-weight: 500;font-size: 20px;}
+.certificate_li1 span {display:block; color:white}
+.certificate_li2 {float:left;width: 47.5%;text-align: center;background-color: #368f8d;padding: 1% 2% 2%;border-radius: 3px 15px 3px 15px;line-height: 1.3;text-decoration: none;color: #fff;font-weight: 500;font-size: 20px;}
+.certificate_li2 span {display:block; color:white}
+.ethic_li h2 {font-size: 19pt; color: #474b55; font-weight: 700; padding: 0 0 1px 23px; margin: 0 0 30px; line-height: 1.3; margin-top: 40px; position: relative;}
+.ethic_li h2:before {display: block;clear: both;content: '';position: absolute;background: #368f8d;width: 8px;height: 35px;left: 0;top: 0;}
+.yellowbox {background: #135f67;display: inline-block;padding: 0.5% 2%;color: #fff;font-size: 13.5pt;font-weight: 500;margin-bottom: 1%;border-radius: 3px;}
+
+/* 보수교육 */
+.business li {color: white; font-weight:bold;}
+.business_li1 {height: 5rem;border-radius: 50px 50px 50px 50px;text-align: center;font-size: 22px;padding-top: 27px;margin-top: 20px;background-color: #368f8d;}
+.business_li2 {height: 5rem;border-radius: 50px 50px 50px 50px;text-align: center;font-size: 22px;padding-top: 27px;margin-top: 40px;background-color: #0d7297;}
+.business_li3 {height: 5rem;border-radius: 50px 50px 50px 50px;text-align: center;font-size: 22px;padding-top: 27px;margin-top: 40px; margin-bottom:30px;background-color: #135f67;}
+
+
+/*주요사업*/
+
+.sub_cont2{width:100%; overflow: hidden;}
+.cont2{float: left; padding: 0px;  width: 100%;  /*padding-top: 25px;*/}
+.mainpage2 {width: 100%; color: #222; line-height: 1.6; /* font-family: NanumGothic;*/  margin: 15px auto; word-break: keep-all; letter-spacing: -0.5px;}
+/*.cont2 h1 {font-size: 25pt; color: #474b55; font-weight: 700; padding: 0; margin: 0 0 20px;  line-height: 1.4; background: url(/theme/basic/img/logoimg.png)no-repeat center left; background-position-x:310px; padding-left: 40%;}*/
+.mainpage2 b {font-weight: 500;}
+.rule_bg2{background: url(/theme/basic/img/pt_box1.png); padding: 1% 0; position: relative;}
+.rule_bg2:before {position: absolute;left: 0;top: 0;width: 50px;height: 50px;border-left: 10px solid #83d1c4;border-top: 10px solid #83d1c4;content: '';}
+.rule_bg2:after {position: absolute; right: 0; bottom: 0; width: 50px; height: 50px; border-right: 10px solid #83d1c4; border-bottom: 10px solid #83d1c4; content: '';}
+.rule_box2 /*{border: 10px double #d8dee2; */{border-radius: 3px; margin: 0 1%; background: #fff; padding: 2% 5%;}
+.rule_txt_box2{font-size: 20px;}
+.lidisc {list-style: disc; padding-left:20px;}
+.listyle {list-style: circle;padding-left:40px;line-height: 1.4em;margin-top: 3px;}
+.tmar10{margin-top:25px;}
+.tmar50{margin-top:50px;}
+.yellowbar {font-size: 19pt;color: #474b55;font-weight: 700;border-left: 8px solid #368f8d;padding: 0 0 1px 18px;margin: 0 0 30px;line-height: 1.3;}
+
+/*회원안내*/
+/*.dep_tit2 {background: url(/theme/basic/img/logoimg.png) no-repeat left -9px; font-size: 19px; letter-spacing: -0.55pt; line-height: 120%; color: #444; padding-left:70px; padding-bottom: 13px; }*/
+.dep_txt {letter-spacing: -0.4pt; line-height: 25px;}
+.fa fa-toggle-on:before {content: "\f205";}
+.dep_dot {letter-spacing: -0.35pt; line-height: 23px; background: url(/theme/basic/img/dep_dot.gif) no-repeat left 10px; padding: 0 0 3px 9px;}
+.socialworker_cont .socialworker_field {overflow: hidden; clear: both;}
+.socialworker_fieldS .normal h6 {background-color: #188c89;text-align : center;}
+.socialworker_fieldS h6 {color: #fff; font-weight: 600; font-family: NotoKR-Medium; font-size: 20px; letter-spacing: -0.5pt; padding: 17px 29px 18px;}
+.normal {float : left;width: 49%;margin-right:2%;/* height: 223px; */}
+.expansion {float : left; width: 49%;}
+.socialworker_fieldS .expansion h6 {background-color: #135f67;text-align : center;}
+.socialworker_fieldS p {color: #FFB610; letter-spacing: -0.35pt; line-height: 120%; font-size: 15px; padding: 24px 0 7px;}
+.socialworker_fieldS span {font-size: 20px; line-height: 1.4em;}
+.socialworker_fieldboxS {border: 1px solid #ddd;border-top: none;padding: 15px 30px;height: 100%;}
+.socialworker_fieldboxS h5 {color: #444444;}
+.socialworker_fieldbox2S {border: 1px solid #ddd; border-top: none; padding: 15px 30px;}
+.socialworker_fieldbox2S p {color: #3ab4b1; letter-spacing: -0.35pt; line-height: 120%; font-size: 15px; padding: 24px 0 7px;}
+.socialworker_fieldS li {list-style: disc;font-size:18px;margin-left: 12px;line-height: 1.4em;}
+.coloryel {color: #135f67;}
+.socialworker_fieldS ul::after { display: block; visibility: hidden; content: ""; clear: both; }
+.normalbox:after {display: block; clear: both; content: '';}
+.long {width:100%}
+.long h6 {background-color: #188c89;text-align: center;color: #fff;font-weight: 600;font-family: NotoKR-Medium;font-size: 20px;letter-spacing: -0.5pt;padding: 17px 29px 18px;}
+.socialworker_fieldboxSS {border: 1px solid #ddd;border-top: none;height: 100%;padding: 15px 30px;}
+.yellowbox2 {margin-top: 15px;display: inline-block;padding: 1%;font-size: 17px;border: solid 3px #0b4759;background: #0b4759;color: #fff;}
+.yellowbox2 a {color:white}
+.spantmar {display:block; margin-top:30px;}
+
+/*비밀의숲 안내*/
+
+.link_box {background-color: #3ab4b1; margin-left: 40%; margin-right: 40%; margin-top: 20px; margin-bottom: 20px; height: 45px; font-size: 15px; padding-top: 12px; color: white;}
+.link_box a {color:white;}
+/*회원광장*/
+
+.padleft10 {padding-left:13%}
+/*개인정보보호정책*/
+.sub_box h3 {font-size: 21px; font-weight: bold; background: url(/theme/basic/img/logoimg.png) no-repeat left; padding-left: 70px; background-position-y: -5px; padding-bottom: 20px; padding-top: 7px;}
+.sub_box span {font-size: 15px; line-height: 24px; display: block;}
+.ft_blue {color: rgb(88, 123, 188);}
+
+/*사이트맵*/
+
+.sitebox_1:after {display:block;visibility:hidden;clear:both;content:""}
+.site_subbox {float:left;width: 31.33%;border: solid 1px #0d7297;margin-right: 3%;}
+.site_subbox:last-child{margin-right:0;}
+.site_subbox ul {padding-top:10px; padding-bottom:10px;}
+.site_subbox li {font-size : 18px; padding-left: 5%; line-height: 35px;}
+.site_subbox a:hover {color:#3ab4b1}
+.map_head {background-color: #0d7297;padding: 5%;}
+.site_subbox h2 { color:white;text-align: center;font-size : 20px;}
+.map_head {}
+.sitebox_2 {}
+.maptmar45 {margin-top:45px;}
+
+/*조직도*/
+table.tbl01 {width:90%;font-size: 17px;border-collapse: collapse;}
+table.tbl01 thead th {background: #135f67;color: #fff;padding:10px;font-size: 17px;}
+table.tbl01 tbody th {padding:8px 10px;border-bottom:1px solid #ddd;border-right:1px solid #ddd;color: #000;}
+table.tbl01 tbody td {padding:6px 10px;border-bottom:1px solid #ddd;color: #000000;}
+
+table.tbl01.name {text-align: center;}
+table.tbl01.name td { border-right:1px solid #ddd }
+table.tbl01.name td:last-child { border-right:0 }
+table.tbl01 tr.b_gray {background: #eee;}
+
+.tab_container .socialworker_field { display: flex; margin-bottom: 100px; }
+
+/*시군지회*/
+
+table.tbl04 {width:100%;font-size: 17px;border-collapse: collapse;border-top: 1px solid #ddd;}
+table.tbl04 th {background: #135f67;color: #323232;font-size: 17px; padding:8px 10px;border-bottom:1px solid #fff;border-right:1px solid #ddd;color: #fff;}
+table.tbl04 td {padding:6px 10px;border-bottom:1px solid #ddd;color: #000000;border-right: 1px solid #ddd;}
+
+table.tbl04.name {text-align: center;}
+table.tbl04.name td { border-right:1px solid #ddd }
+table.tbl04.name td:last-child { border-right:0 }
+table.tbl04 tr.b_gray {background: #eee;}
+ul.cricle { list-style: circle; padding-left:22px;}
+
+/*서브페이지 반응형*/
+@media screen and (max-width: 1200px) {
+	#aside {display:none !important;}
+	.container-wrap {width: 100%;}
+	.img1 {width:100%}
+	/*사회복지사선서*/
+	.mainpage {width:100%;}
+	/*윤리강령*/
+	.outpage {font-size:11pt;}
+	.outpage h1 {font-size:23pt;}
+}
+
+@media screen and (max-width: 1000px) {
+	/*사회복지사란*/
+	.dep_txt span {font-size:15px;}
+	.socialworker_cont .bg_box h6 {font-size: 15px;}
+	.dep_dot {font-size:15px;}
+	.socialworker_field p {font-size:15px;}
+	.socialworker_field span {font-size: 14px;}
+	.socialworker_fieldbox h5 {font-size:14px;}
+	/*사회복지사선서*/
+	.mainpage h1 {font-size: 23pt;}
+	.rule_txt_box {font-size: 12pt;}
+	/*윤리강령*/
+	.ethic_li {font-size:15px;}
+	/*자격제도*/
+	.bg_box {font-size:15px;}
+	.ethic_li h2 {font-size:18pt;}
+	/*자격증 신청*/
+	.certificate_li1 {font-size: 12.5pt;}
+	.certificate_li2 {font-size: 12.5pt;}
+
+
+}
+
+@media screen and (max-width: 900px) {
+	/*자격제도*/
+	.HCP01 li {width: 50%;}
+	.box2_1 {width: 23rem;}
+	.bg_box {font-size:14px;}
+}
+
+
+@media screen and (max-width: 768px) {
+	/*사회복지사란*/
+	.dep_tit {font-size:22px;}
+	.normal {width:100%; margin-right:0; margin-bottom:20px;}
+	.expansion {width:100%;}
+	/*사회복지사선서*/
+	.mainpage h1 {font-size: 22pt;}
+	.rule_txt_box {font-size: 11pt;}
+	.rule_txt_box b {font-size:13pt;}
+	/*윤리강령*/
+	.outpage h1 {font-size:22pt;}
+	.ethic_li {font-size:14px;}
+	.ethic_tit {font-size: 13pt;}
+	/*시군지회*/
+	.card_list h2 {font-size:22px;}
+	.card_list span {font-size:16px;}
+	.cardtitle{font-size: 21px !important;}
+	.cardtitle_none {font-size: 26px !important;}
+	.card {width:90%;}
+	/*자격제도*/
+	.txt {font-size:14px;}
+	.bg_box h6 {font-size:15px;}
+	.ethic_li h2 {font-size:17pt;}
+	/*자격증 신청*/
+	.certificate_li1 {font-size: 11.5pt;}
+	.certificate_li2 {font-size: 11.5pt;}
+	.yellowbox {font-size: 12.5pt;}
+	/*보수교육이란?*/
+	.listbox li {font-size: 16px;}
+	.business_li1 {font-size: 21px;}
+	.business_li2 {font-size: 21px;}
+	.business_li3 {font-size: 21px;}
+	/*회비납부안내*/
+	.socialworker_fieldS li {font-size:14px;}
+	.socialworker_fieldS span {font-size: 14px;}
+	/*주요사업*/
+	.rule_txt_box2 {font-size:12pt;} 
+	.rule_bg2:before {border-left: 7px solid #83d1c4; border-top: 7px solid #83d1c4;} 
+	.rule_bg2:after {border-right: 7px solid #3ab4b1; border-bottom: 7px solid #3ab4b1;}
+}
+
+@media screen and (max-width: 670px) {
+	/*보수교육이란?*/
+	.listbox ul {flex-direction: column;}
+	.listbox li {width: 100%;}	
+	.listbox li:first-child {padding-top:10px !important; height:50px !important;}
+	.listbox li:nth-child(2) {padding-top:10px !important; height:50px !important;}
+	.listbox li:nth-child(3) {padding-top:10px !important; height:50px !important;}
+	.listbox li:nth-child(4) {padding-top:0px !important; height:50px !important;}
+	.listbox li:last-child {padding-top:0px !important; height:50px !important;}
+	.business_li1 {font-size: 20px;}
+	.business_li2 {font-size: 20px;}
+	.business_li3 {font-size: 20px;}
+}
+
+@media screen and (max-width: 500px) {
+    .hello_img { width: 100%; float: unset; height: 700px; overflow: hidden; }
+    .hello_img img { display: block; margin: 0 auto; }
+    .hello_img p { margin: 0; }
+    .hello { width: 100%; float: unset; padding: 0; margin-top: 20px;}
+    .basic p.color { font-size: 19px !important; }
+	/*사회복지사란*/
+	.dep_tit {font-size:21px;}
+	.dep_txt span {font-size:14px;}
+	.socialworker_cont .bg_box h6 {font-size: 14px;}
+	.dep_dot {font-size:14px;}
+	.socialworker_field p {font-size:14px;}
+	.socialworker_field span {font-size: 13px;}
+	.socialworker_fieldbox h5 {font-size:13px;}
+	/*사회복지사선서*/
+	.mainpage h1 {font-size: 20pt;}
+	.rule_txt_box {font-size: 10pt;}
+	/*윤리강령*/
+	.ethic_li {font-size:13px;}
+	.ethic_tit {font-size: 12pt;}
+	.outpage {font-size:10pt;}
+	/*자격증신청*/
+	.certificate_li1 {width:45%;}
+	.certificate_li2 {width:45%;}
+	.ethic_li h2 {font-size:16pt}
+	.yellowbox {font-size: 11.5pt;}
+	/*보수교육이란?*/
+	.business_li1 {font-size: 18px;}
+	.business_li2 {font-size: 18px;}
+	.business_li3 {font-size: 18px;}
+	/*회비납부안내*/
+	.socialworker_fieldboxS {padding: 20px 20px;} 
+	.socialworker_fieldbox2S {padding: 20px 20px;} 
+	.socialworker_fieldboxSS {padding: 20px 20px;}
+	.yellowbox2 {font-size: 16px;}
+	/*주요사업*/
+	.rule_txt_box2 {font-size:11pt;}
+	.rule_bg2:before {border-left: 5px solid #83d1c4; border-top: 5px solid #83d1c4;}
+	.rule_bg2:after {border-right: 5px solid #3ab4b1; border-bottom: 5px solid #3ab4b1;}
+	/*사이트맵*/
+	.site_subbox {width:100%; margin-right:0; text-align: center; margin-top:45px;}
+	.map_head {padding:3%;}
+	.maptmar45 {margin-top:0;}
+}
+
+@media screen and (max-width: 390px) {
+	/*사회복지사란*/
+	.dep_txt span {font-size:13px;}
+	.socialworker_cont .bg_box h6 {font-size: 13px;}
+	.dep_dot {font-size:13px;}
+	/*사회복지사선서*/
+	.mainpage h1 {font-size: 16pt;}
+	.rule_txt_box {font-size: 9pt;}
+	.rule_txt_box {padding: 5% 2% 5%;}
+	.rule_bg:before {border-left: 5px solid #83d1c4;
+    border-top: 5px solid #83d1c4;}
+	.rule_bg:after {border-right: 5px solid #3ab4b1;
+    border-bottom: 5px solid #3ab4b1;}
+	/*윤리강령*/
+	.dep_tit {font-size: 19px;}
+	.ethic_li {font-size: 12px;}
+	.ethic_tit {font-size: 11pt;}
+	.white-box {padding: 25px;}
+	.outpage {font-size:9pt !important;}	
+	.mission-box:before {border-left: 5px solid #83d1c4; border-top: 5px solid #83d1c4;}
+	.mission-box:after {border-right: 5px solid #3ab4b1; border-bottom: 5px solid #3ab4b1;}
+	.outpage h1 {font-size: 17pt;}
+	/*자격제도*/
+	.HCP01 li {width:100%}
+	.bg_box {font-size:12px;}
+	.bg_box {padding:10px;}
+	.dep_tit {font-size: 19px;}
+	.txt{font-size:13px;}
+	.bg_box h6 {font-size:14px;}
+	/*자격증신청*/
+	.certificate_li1 {font-size: 10pt;}
+	.certificate_li2 {font-size: 10pt;}
+	.ethic_li h2 {font-size:15pt}
+	.yellowbox {font-size: 10.5pt;}
+	.ethic_li h2:before {height:30px;}
+	/*보수교육이란?*/
+	.bg_box {line-height: 20px;}
+	.ulclass {padding-left: 15px;}
+	.ulclass2 {padding-left: 20px;}
+	.business_li1 {font-size: 17px;}
+	/*회비납부안내*/
+	.socialworker_fieldS li {font-size:13px;}
+	.socialworker_fieldS span {font-size: 13px;}
+	.yellowbox2 {font-size: 15px;}
+}
+
+@media screen and (max-width: 280px) {
+	/*사회복지사 선서*/
+	.mainpage h1 {font-size: 13pt;}
+	.rule_txt_box {font-size: 8pt;}
+	.rule_bg:before {border-left: 3px solid #83d1c4;
+    border-top: 3px solid #83d1c4;}
+	.rule_bg:after {border-right: 3px solid #3ab4b1;
+    border-bottom: 3px solid #3ab4b1;}
+	.white-box {padding: 20px;}
+	/*자격제도*/
+	.dep_tit {font-size:16px;}
+	.bg_box h6 {font-size:13px;}
+	/*자격증신청*/
+	.ethic_li h2:before {height:25px;}
+	/*보수교육이란?*/
+	.bg_box {font-size:11px;}
+	.ethic_li h2 {font-size:13pt;}
+	.business_li1 {font-size: 15px;}
+	.business_li2 {font-size: 15px;}
+	.business_li3 {font-size: 15px;}
+}

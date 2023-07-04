@@ -1,35 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>우체국 주소 API 예제</title>
-	<!-- 주소 API에서 요구하는 스타일시트와 스크립트를 추가합니다. -->
-	<link rel="stylesheet" href="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.css">
-	<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-</head>
-<body>
-	<!-- 주소 입력 필드와 주소 검색 버튼을 만듭니다. -->
-	<!-- <input type="text" id="sample4_postcode" placeholder="우편번호" onclick="sample4_execDaumPostcode()"> -->
-	<input type="button" value="주소 검색" onclick="sample4_execDaumPostcode()"><br>
-	<input type="text" id="sample4_roadAddress" placeholder="도로명주소"><br>
-	<!-- <input type="text" id="sample4_jibunAddress" placeholder="지번주소"><br>
-	<input type="text" id="sample4_detailAddress" placeholder="상세주소"><br>
-	<input type="text" id="sample4_extraAddress" placeholder="참고항목"> -->
-
-	<script>
-		// 주소 검색 API를 실행하는 함수입니다.
-		function sample4_execDaumPostcode() {
-			new daum.Postcode({
-				oncomplete: function(data) {
-					// 검색된 주소 정보를 해당 필드에 입력합니다.
-					document.getElementById('sample4_postcode').value = data.zonecode; // 우편번호
-					document.getElementById('sample4_roadAddress').value = data.roadAddress; // 도로명주소
-					document.getElementById('sample4_jibunAddress').value = data.jibunAddress; // 지번주소
-					document.getElementById('sample4_detailAddress').value = ""; // 상세주소
-					document.getElementById('sample4_extraAddress').value = ""; // 참고항목
-				}
-			}).open();
-		}
-	</script>
-</body>
-</html>
+<div class="text_area">
+	<div class="sub1_2_title">
+	<p>전라남도립국악단</p>
+	</div>
+	
+	<p style="margin-bottom:20px !important" class="sub1_2_p ppap_apl_p2">전라남도립국악단은 남도의 전통 가·무·악·희(歌·舞·樂·戱)를 계승, 발전시키기 위해 1986년 8월 9일 창단되었다. 어린이국악단을 포함하여 창악·무용·기악·사물 등 140여명의 단원들이 우리 음악의 우수성을 널리 알리고 있으며, 국내 주요 도시를 비롯하여 세계 각국 순회공연 등 3,200여회 이상의 공연을 통해 우리나라의 훌륭한 전통 예술을 널리 알리는 문화사절단의 역할을 해오고 있다.</p>
+	<p class="sub1_2_p ppap_apl_p2">2006년부터 현재까지 매주 토요일 오후 4시에 선보이는 ‘토요공연’은 지역민을 물론, 우리 지역을 찾는 국내외 관광객들에게도 큰 호응을 얻고 있으며, 2020년 오라토리오 집체극 「봄날」, 2021년 여순 가무악희 「또 다른 숲을 시작하세요」 등을 기획·공연하여 전라남도 전통공연예술의 대표 브랜드 상품으로 자리매김하고 있다.</p>
+	
+	<div class="sub1_2_title">
+	<p>연혁</p>
+	</div>
+	
+	<div class="sub1_2_ul">
+	<ul>
+		<li><span class="event_date_ze"><span>1986.</span><span>08.</span><span>09.</span></span> 전라남도립국악단 창단(광주남도예술회관)</li>
+		<li><span class="event_date_ze"><span>1986.</span><span>09.</span><span>12.</span></span> 전라남도립국악단 창단공연</li>
+		<li><span class="event_date_ze"><span>1991.</span><span>02.</span><span>19.</span></span> 초대 조동규(조통달) 상임지휘자 취임</li>
+		<li><span class="event_date_ze"><span>1992.</span><span>06.</span><span>18.</span></span> 나주향토문화회관으로 이전</li>
+		<li><span class="event_date_ze"><span>1993.</span><span>12.</span><span>23.</span></span> 광주광역시 (구)전남도지사공관으로 이전</li>
+		<li><span class="event_date_ze"><span>1998.</span><span>08.</span><span>14.</span></span> 2대 정철호 상임지휘자 취임</li>
+		<li><span class="event_date_ze"><span>2002.</span><span>04.</span><span>24.</span></span> 3대 신상철 상임지휘자 취임</li>
+		<li><span class="event_date_ze"><span>2002.</span><span>12.</span><span>10.</span></span> (구)화순군보건소로 이전</li>
+		<li><span class="event_date_ze"><span>2008.</span><span>05.</span><span>21.</span></span> 4대 김만석 상임지휘자 취임</li>
+		<li><span class="event_date_ze"><span>2011.</span><span>11.</span><span>02.</span></span> 5대 박승희 상임지휘자 취임</li>
+		<li><span class="event_date_ze"><span>2013.</span><span>07.</span><span>15.</span></span> 남도소리울림터 기공식</li>
+		<li><span class="event_date_ze"><span>2015.</span><span>05.</span><span>30.</span></span> 남도소리울림터 개관</li>
+		<li><span class="event_date_ze"><span>2015.</span><span>10.</span><span>25.</span></span> 6대 유장영 예술감독 취임</li>
+		<li><span class="event_date_ze"><span>2020.</span><span>03.</span><span>06.</span></span> 7대 류형선 예술감독 취임</li>
+	</ul>
+	
+	<div><img alt="남도국악단 공연 이미지" src="/images/egovframework/com/jpg/sub1_2.jpg" /></div>
+	</div>
+	</div>
+	
